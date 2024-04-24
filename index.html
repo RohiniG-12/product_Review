@@ -16,7 +16,7 @@
             height: 400px;
             width: 400px;
             border: 1px solid black;
-            box-shadow:0px 0px 10px 0px;
+            box-shadow:4px 5px 0px 0px #acacad;
             border-radius: 10px;
            
 
@@ -36,6 +36,7 @@
             border: 1px solid black;
             padding: 2px;
             box-shadow: 3px 3px 0px 0px #acacac;
+            cursor: pointer;
             
         }
        
@@ -43,18 +44,23 @@
 </head>
 <body>
     
-    <img src="ring.jpg" class="main-img" id="main_image"/>
+    <img src="ring.jpg" class="main-img" id="main_image" />
 
     <div class="image-container">
-        <img src="ring.jpg" class="img"/>
-        <video autoplay="" controls="" loop="" class="img">
-            <source src="vid.mp4" type="=video/mp4"/>
-        </video>
-        <img src="ring1.jpg" class="img "/>
-        <img src="ring3.jpg" class="img"/>
+        <img src="ring.jpg" class="img" onclick="ring('ring.jpg')"/>
+          <video src="vid.mp4" class="img" onclick="ring('vid.mp4')" type="video/mp4"autoplay></video> 
+         
+         <img src="ring1.jpg" class="img " onclick="ring('ring1.jpg')"/>
+          <img src="ring3.jpg" class="img" onclick="ring('ring3.jpg')"/>
 
     </div>
 
-    
+    <script>
+        function ring(imageName)
+        {
+          const mainImg=document.getElementById('main_image');
+          mainImg.src=imageName;
+        }
+    </script>
 </body>
 </html>
