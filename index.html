@@ -3,7 +3,44 @@
 <head>
     
     <title>Product_Review Page</title>
-    </head>
+    <style>
+        body{
+            background-color: #FFDEE9;
+           background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+           height: 100vh;
+
+        }
+        .main-img{
+            display: block;
+            margin: 20px auto;
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            box-shadow:0px 0px 10px 0px;
+            border-radius: 10px;
+           
+
+        }
+        .image-container{
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            object-fit: cover;
+           
+        }
+        .img{
+           margin: 10px;
+           height: 70px;
+            width: 70px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 2px;
+            box-shadow: 3px 3px 0px 0px #acacac;
+            
+        }
+       
+    </style>
+</head>
 <body>
     
     <img src="ring.jpg" class="main-img" id="main_image"/>
@@ -13,7 +50,7 @@
         <video autoplay="" controls="" loop="" class="img">
             <source src="vid.mp4" type="=video/mp4"/>
         </video>
-        <img src="ring2.jpg" class="img "/>
+        <img src="ring1.jpg" class="img "/>
         <img src="ring3.jpg" class="img"/>
 
     </div>
